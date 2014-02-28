@@ -43,7 +43,8 @@ footer bg: #323536;
 }
 
 h1.blog-header {
-    font-size: 35px;
+    font-size: 33px;
+    font-family: 'VAG Rounded Std Thin';
     text-align: center;
     color: #fff;
     padding: 25px 0 40px;
@@ -57,6 +58,7 @@ h1.blog-header {
 }
 
 .post h4 {
+    font-family: 'robotobold';
     font-size: 15px;
     color: #0f1b35;
     padding-bottom: 12px; 
@@ -88,7 +90,8 @@ h1.blog-header {
 }
 
 h1.webinar-header {
-    font-size: 35px;
+    font-size: 33px;
+    font-family: 'VAG Rounded Std Thin';
     text-align: center;
     color: #272727;
     padding: 20px 0 25px;
