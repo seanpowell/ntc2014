@@ -1,0 +1,163 @@
+/* Colors 
+nav bg: #c0d8cf;
+ntc green: #027c3a;
+blog bg: #6bbbbf;
+post bg: #caeef1;
+ntc row bg: #e9edf0;
+ntc button: #e65f00;
+links: #0063aa;
+header color: #272727; 
+share bg: #73afb5;
+footer bg: #323536;
+*/
+
+.navbar-inverse {
+    background-color: #c0d8cf;
+}
+
+.navbar-brand {
+    display: block;
+    max-width: 200px;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+    margin-left: 0;
+    margin-right: inherit;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: #c0d8cf;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #027c3a;
+    height: 4px;
+    border-radius: 0px;
+    margin-bottom: -1px;
+}
+
+.blog {
+    background-color: #6bbbbf;
+}
+
+h1.blog-header {
+    font-size: 35px;
+    text-align: center;
+    color: #fff;
+    padding: 25px 0 40px;
+}
+
+.post {
+    text-align: center;
+    background-color: #caeef1;
+    padding: 10px 20px;
+    margin-bottom: 25px;
+}
+
+.post h4 {
+    font-size: 15px;
+    color: #0f1b35;
+    padding-bottom: 12px; 
+}
+
+.ntc {
+    padding: 35px 0 40px; 
+    background-color: #e9edf0;
+    float: left;
+}
+
+.ntc-logo {
+    width: 225px;
+    margin-bottom: 20px
+}
+
+.ntc button, .goals button {
+    background-color: #e65f00;
+    width: 100%;
+    border: none;
+    padding: 10px inherit;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 10px inherit 40px;
+}
+
+.webinars {
+    text-align: center;
+}
+
+h1.webinar-header {
+    font-size: 35px;
+    text-align: center;
+    color: #272727;
+    padding: 20px 0 25px;
+}
+
+.webinar h4 { 
+    color: #0063aa;
+}
+
+.webinar {
+    margin-bottom: 35px
+}
+
+.goals {
+    padding: 35px 0 40px; 
+    background-color: #e9edf0;
+    float: left;
+}
+
+.goals p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.goals select {
+    margin-bottom: 25px;
+    border-radius: 0;
+}
+
+.goals button {
+    margin-top: 0;
+}
+
+.share {
+    float: left;
+    background-color: #73afb5; 
+    padding: 
+}
+.share h4 {
+    font-size: 20px;
+    color: #fff;
+}
+
+.footer {
+    background-color: #323536;
+    color: #fff;
+    text-align: center;
+    float: left;
+    padding-top: 10px;
+    width: 100%;
+}
+
+.footer h4 {
+    color: #99c2de;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.footer .row {
+    padding: 10px 0;
+    border-bottom: 1px solid #4f5455;
+}
+
+.footer address {
+    color: #cac8c8;
+    font-size: 12px;
+}
+
+.footer a {
+    color: #99c2de;
+}
