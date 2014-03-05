@@ -11,156 +11,427 @@ share bg: #73afb5;
 footer bg: #323536;
 */
 
-.navbar-inverse {
+/* Mobile Styles */
+
+@media screen and (min-width: 320px) {
+
+    body {
+        font-family: 'robotoregular';
+    }
+
+    .main.container {
+        margin-top: 80px;
+        overflow: hidden;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    .col {
+        margin: 0 25px;
+        display: inline-block;
+    }
+
+    .navbar-inverse {
+        background-color: transparent;
+        border: none;
+    }
+
+    .navbar-brand {
+        display: block;
+        max-width: 200px;
+        padding: 15px 0;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 20px;
+        text-align: left;
+        margin-left: 0;
+        margin-right: inherit;
+    }
+
+    .navbar-inverse .navbar-toggle {
+        border-color: #c0d8cf;
+        margin-top: 20px;
+    }
+
+    .navbar-inverse .navbar-toggle .icon-bar {
+        background-color: #027c3a;
+        height: 4px;
+        border-radius: 0px;
+        margin-bottom: -1px;
+    }
+
+    .hero img {
+        width: 100%;
+    }
+
+    .blog {
+        background-color: #6bbbbf;
+    }
+
+    h1.blog-header {
+        font-size: 33px;
+        font-family: 'VAG Rounded Std Thin';
+        text-align: center;
+        color: #fff;
+        padding: 25px 0 40px;
+    }
+
+    .post {
+        text-align: center;
+        background-color: #caeef1;
+        padding: 10px 20px;
+        margin-bottom: 25px;
+        display: block;
+        height: 85px;
+    }
+
+    .post h4 {
+        font-family: 'robotobold';
+        font-size: 15px;
+        color: #0f1b35;
+        padding-bottom: 12px; 
+    }
+
+    .ntc {
+        padding: 35px 0 40px; 
+        background-color: #e9edf0;
+        float: left;
+    }
+
+    .ntc-logo {
+        width: 225px;
+        margin-bottom: 20px
+    }
+
+    .ntc button, .goals button {
+        background-color: #e65f00;
+        width: 100%;
+        border: none;
+        padding: 10px inherit;
+        color: #fff;
+        text-transform: uppercase;
+        font-family: 'robotocondensed';
+        font-size: 20px;
+        color: #fdf6f3;
+    }
+
+    .webinars {
+        text-align: center;
+    }
+
+    h1.webinar-header {
+        font-size: 33px;
+        font-family: 'VAG Rounded Std Thin';
+        text-align: center;
+        color: #272727;
+        padding: 20px 0 25px;
+    }
+
+    .webinar h4 { 
+        color: #0063aa;
+    }
+
+    .webinar {
+        margin-bottom: 35px
+    }
+
+    .goals {
+        padding: 35px 0 40px; 
+        background-color: #e9edf0;
+        float: left;
+        width: 100%;
+    }
+
+    .goals p {
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .goals select {
+        margin-bottom: 25px;
+        border-radius: 0;
+        width: 100%;
+    }
+
+    .goals button {
+        margin-top: 0;
+    }
+
+    .share {
+        float: left;
+        background-color: #73afb5; 
+        width: 100%;
+        text-align: center;
+    }
+    .share h4 {
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .footer {
+        background-color: #323536;
+        color: #fff;
+        text-align: center;
+        float: left;
+        padding-top: 10px;
+        width: 100%;
+    }
+
+    .footer h4 {
+        color: #99c2de;
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+
+    .footer .row {
+        padding: 10px 0;
+        border-bottom: 1px solid #4f5455;
+    }
+
+    .footer address {
+        color: #cac8c8;
+        font-size: 12px;
+    }
+
+    .footer a {
+        color: #99c2de;
+    }
+
+}
+
+/* Ipad */
+
+@media screen and (min-width: 768px) {
+    .main.container {
+        width: 100%;
+        margin-top: 125px;
+    }
+
+    .navbar > .container {
+        width: 100%;
+    }
+
+    .navbar-inverse .navbar-nav > li > a {
+        color: #000000;
+        font-family: 'robotobold';
+        text-transform: uppercase;
+        padding-top: 28px;
+    }
+
+    .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+        margin-left: 15px;
+    }
+
+    .blog, .webinars, .goals {
+        padding-top: 10px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 30px;
+        float: left;
+        text-align: left;
+    }
+
+    .col {
+        margin: 0 0;
+        display: block;
+    }
+
+    .row {
+        padding: 0 35px;
+    }
+
+    .sub-menu {
+        background-color: #69976c;
+        padding: 10px 20px;
+        color: #fff;
+        font-family: 'robotocondensed';
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    span.separator {
+        margin: 0 15px;
+        font-family: Arial;
+        font-weight: 200px;
+        height: 50px;
+        color: #afafaf;
+    }
+    
+    .mission {
+        padding: 15px 75px 10px;
+        line-height: 1.6em;
+        font-family: 'robotoregular';
+    }
+
+    button.learn {
+        background-color: #e65f00;
+        width: 100%;
+        border: none;
+        padding: 10px inherit;
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+    h1.blog-header, h1.webinar-header {
+        text-align: left;
+        padding: 30px 0 20px;
+    }
+
+    .post {
+        text-align: left;
+        background-color: #fff;
+        height: 220px;
+        width: 30%;
+        display: block;
+        float: left;
+    }
+
+    .post.one {
+        margin-right: 45px;
+    }
+
+    .post.three {
+        float: right;
+    }
+
+    .post .date {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .post img {
+        height: auto;
+        width: 125% !important;
+        vertical-align: middle;
+        margin-left: -12% !important;
+        margin-top: 10px;
+    }
+
+    .banner {
+        padding: 0;
+    }
+
+    .more p {
+        color: #fff;
+        margin-top: 0em;
+        margin-bottom: 1em;
+        font-family: 'robotoregular';
+        font-size: 18px;
+        text-align: right;
+        margin-right: 0;
+        padding-right: 0;
+    }
+
+    .share .buttons {
+        font-family: 'robotomedium';
+        font-size: 18px;
+        padding: 20px 0;
+        color: #fff;
+    }
+
+    .share img {
+        margin-left: 10px;
+    }
+
+    .footer-nav {
+        padding: 12px 0 10px;
+    }
+
+    .footer-nav li {
+        display: inline;
+        disc-style-type: none;
+        text-transform: uppercase;
+        margin-right: 20px;
+        font-size: 14px;
+    }
+
+    .footer .logo {
+        text-align: left;
+        margin-left: 47px;
+        padding-bottom: 10px;
+    }
+
+    .logo-text, .twitter-header {
+        font-family: 'VAG Rounded Std Thin';
+        font-size: 22px;
+        color: #d0cfcf;
+        vertical-align: bottom;
+        margin-left: 10px;
+    }
+
+    .twitter-header {
+        margin-left: 0;
+    }
+
+    .twitter {
+        margin-left: 65px;
+        text-align: left;
+        padding: 15px 0;
+    }
+
+    .tweet-container {
+        width: 25%;
+        float: left;
+        margin-right: 5%;
+        font-size: 12px;
+    }
+
+    .tweet-image {
+        float: left;
+        margin-right: 10px;
+    }
+
+    .policy {
+        padding: 15px 0;
+        text-align: left;
+        margin-left: 50px;
+    }
+
+    .policy p {
+        color: #d0cfcf;
+        font-family: 10px;
+    }
+ } 
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .post img {
+        height: auto;
+        width: 135% !important;
+        vertical-align: middle;
+        margin-left: -17% !important;
+        margin-top: 10px;
+    }
+
+    .post.one {
+        margin-right: 35px;
+    }
+}
+
+@media screen and (min-width: 1090px) {
+    body {
+        background: url("../images/background.png") repeat-x;
+    }
+
+
+}
+
+body > .container, .navbar > .container {
+    max-width: 1100px;
+ }  
+
+body > .container {
+    background: #fff;
+}
+
+.navbar > .container {
     background-color: #c0d8cf;
-}
-
-.navbar-brand {
-    display: block;
-    max-width: 200px;
-    padding: 15px 0;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 20px;
-    text-align: left;
-    margin-left: 0;
-    margin-right: inherit;
-}
-
-.navbar-inverse .navbar-toggle {
-    border-color: #c0d8cf;
-}
-
-.navbar-inverse .navbar-toggle .icon-bar {
-    background-color: #027c3a;
-    height: 4px;
-    border-radius: 0px;
-    margin-bottom: -1px;
-}
-
-.blog {
-    background-color: #6bbbbf;
-}
-
-h1.blog-header {
-    font-size: 33px;
-    font-family: 'VAG Rounded Std Thin';
-    text-align: center;
-    color: #fff;
-    padding: 25px 0 40px;
-}
-
-.post {
-    text-align: center;
-    background-color: #caeef1;
-    padding: 10px 20px;
-    margin-bottom: 25px;
-}
-
-.post h4 {
-    font-family: 'robotobold';
-    font-size: 15px;
-    color: #0f1b35;
-    padding-bottom: 12px; 
-}
-
-.ntc {
-    padding: 35px 0 40px; 
-    background-color: #e9edf0;
-    float: left;
-}
-
-.ntc-logo {
-    width: 225px;
-    margin-bottom: 20px
-}
-
-.ntc button, .goals button {
-    background-color: #e65f00;
-    width: 100%;
     border: none;
-    padding: 10px inherit;
-    color: #fff;
-    text-transform: uppercase;
-    margin: 10px inherit 40px;
+    padding: 0 0 15px 10px;
 }
 
-.webinars {
-    text-align: center;
-}
-
-h1.webinar-header {
-    font-size: 33px;
-    font-family: 'VAG Rounded Std Thin';
-    text-align: center;
-    color: #272727;
-    padding: 20px 0 25px;
-}
-
-.webinar h4 { 
-    color: #0063aa;
-}
-
-.webinar {
-    margin-bottom: 35px
-}
-
-.goals {
-    padding: 35px 0 40px; 
-    background-color: #e9edf0;
-    float: left;
-}
-
-.goals p {
-    text-align: center;
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-.goals select {
-    margin-bottom: 25px;
-    border-radius: 0;
-}
-
-.goals button {
-    margin-top: 0;
-}
-
-.share {
-    float: left;
-    background-color: #73afb5; 
-    padding: 
-}
-.share h4 {
-    font-size: 20px;
-    color: #fff;
-}
-
-.footer {
-    background-color: #323536;
-    color: #fff;
-    text-align: center;
-    float: left;
-    padding-top: 10px;
+.img-responsive {
     width: 100%;
-}
-
-.footer h4 {
-    color: #99c2de;
-    text-transform: uppercase;
-    font-size: 18px;
-}
-
-.footer .row {
-    padding: 10px 0;
-    border-bottom: 1px solid #4f5455;
-}
-
-.footer address {
-    color: #cac8c8;
-    font-size: 12px;
-}
-
-.footer a {
-    color: #99c2de;
 }

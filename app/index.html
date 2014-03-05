@@ -21,52 +21,29 @@
 
         <link rel="stylesheet" href="styles/main.css">
 </head>
-    <body>
-
-    <!-- Page content of course! -->
-    <!-- Custom styles for this template -->
-<style>
-  /* Move down content because we have a fixed navbar that is 50px tall */
-  body {
-    padding-top: 50px;
-    padding-bottom: 20px;
-  }
-
-  /* Set widths on the navbar form inputs since otherwise they're 100% wide */
-  .navbar-form input[type="text"],
-  .navbar-form input[type="password"] {
-    width: 180px;
-  }
-
-  /* Wrapping element */
-  /* Set some basic padding to keep content from hitting the edges */
-  .body-content {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  /* Responsive: Portrait tablets and up */
-  @media screen and (min-width: 768px) {
-    /* Let the jumbotron breathe */
-    .jumbotron {
-      margin-top: 20px;
-    }
-    /* Remove padding from wrapping element since we kick in the grid classes here */
-    .body-content {
-      padding: 0;
-    }
-  }
-</style>
+<body>
 
 <div class="navbar navbar-inverse navbar-fixed-top">
   <div class="container">
+    <div class="row">
+      <div class="sub-menu col col-sm-7 hidden-xs pull-right">
+        <span class="social"><img src="images/top-sm-sprite.png" alt="Social Share Buttons"></span>
+        <span class="separator">|</span> 
+        <span class="search">Search</span>
+        <span class="separator">|</span>
+        <span class="account">My Account</span> 
+      </div>
+    </div>
+
     <a class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </a>
-    <a class="navbar-brand" href="#"><img src="images/logo.png" alt="NTEN"></a>
-    <div class="nav-collapse collapse">
+    <a class="navbar-brand" href="#">
+      <img class="img-responsive" src="images/logo.png" alt="NTEN">
+    </a>
+    <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
         <li><a href="#about">About NTEN</a></li>
         <li><a href="#events">Membership Events</a></li>
@@ -74,65 +51,106 @@
         <li><a href="#community">Community</a></li>
         <li><a href="#support">Support</a></li>
       </ul>
-      <form class="navbar-form form-inline pull-right">
-        <input type="text" placeholder="Email">
-        <input type="password" placeholder="Password">
-        <button type="submit" class="btn">Sign in</button>
-      </form>
     </div><!--/.nav-collapse -->
   </div>
 </div>
 
-<div class="container">
+<div class="main container">
 
   <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="hero">
-        <img src="images/hero.png" alt="NTEN Hero Image" />
+      <!-- <img src="images/hero.png" alt="NTEN Hero Image" /> -->
+      <span data-picture data-alt="A community transforming technology into social change.">
+        <span data-src="../images/hero.png"></span>
+        <span data-src="../images/hero-tablet.png" data-media="(min-width: 768px)"></span>
+        <span data-src="../images/hero-desktop.png" data-media="(min-width: 1000px)"></span>
+
+        <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+        <noscript>
+            <img src="hero-desktop.png" alt="A community transforming technology into social change.">
+        </noscript>
+      </span>
+    </div>
+
+    <div class="mission hidden-xs row">
+      <div class="col col-sm-9">
+        <p>Nonprofit Technology Network (NTEN) is the membership organization of nonprofit professionals who put technology to use for their causes.</p>
+      </div>
+      <div class="col col-sm-3">
+        <button class="learn">Learn More</button>
+      </div>
     </div>
 
     <div class="blog">
-        <div class="row col col-lg-12">
+        <div class="row">
+          <div class="col col-sm-12">
             <h1 class="blog-header">The NTEN Connect Blog</h1>
+          </div> 
         </div>
         <!-- Example row of columns -->
         <div class="row">
-          <div class="post col col-lg-4">
+          <div class="post one">
+            <span class="date hidden-xs">February 14, 2014</span>
+            <img class="hidden-xs" src="images/blog-1.png" alt="On Falling in Love With the NTEN Community">
             <h4>On Falling in Love With the NTEN Community</h4>
           </div>
-          <div class="post col col-lg-4">
+          <div class="post two">
+            <span class="date hidden-xs">February 07, 2014</span>
+            <img class="hidden-xs" src="images/blog-2.png" alt="10 Tips for an Effective Nonprofit Content Strategy">
             <h4>10 Tips for an Effective Nonprofit Content Strategy</h4>
           </div>
-          <div class="post col col-lg-4">
+          <div class="post three">
+            <span class="date hidden-xs">February 07, 2014</span>
+            <img class="hidden-xs" src="images/blog-3.png" alt="What You Need to Know to Launch a Grassroots-led Campaigns Platform">
             <h4>What You Need to Know to Launch a Grassroots-led Campaigns Platform</h4>
+          </div>
+          <div class="col col-sm-12 more">
+            <p>See more blog posts ></p>
+            <br>
+          </div>
+        </div>
+        <div class="row hidden-xs">
+          <div class="col col-sm-12 banner">
+            <img class="img-responsive" src="images/ntc-banner.png" alt="Register Today for the 2014 NTC">
+          </div>
+          <div class="col col-sm-12 more">
+            <br>
+            <p>See more events ></p>
           </div>
         </div>
     </div>
 
-    <div class="ntc">
-        <div class="row col col-lg-12">
+    <div class="ntc visible-xs">
+        <div class="row">
+          <div class="col col-sm-12">
             <img class="ntc-logo" src="images/ntc-logo.png" alt="2014 NTC">
+          </div>    
         </div>
-        <div class="row col col-lg-12">
+        <div class="row">
+          <div class="col col-sm-12">
             <p>Connect with peers and learn from leading organizations about using technology to meet your mission. <strong>Regular registration rates close February 14th!</strong></p>
             <button class="register">Register Today for the 2014 NTC</button>
+          </div>
         </div>  
     </div>
 
     <div class="webinars">
-        <div class="row col col-lg-12">
+        <div class="row">
+          <div class="col col-sm-12">
             <h1 class="webinar-header">Upcoming Webinars</h1>
+          </div> 
         </div>
         <!-- Example row of columns -->
         <div class="row">
-          <div class="webinar col col-lg-4">
+          <div class="webinar col col-sm-4">
             <h4>Webinar: 3 Steps to Make Facebook More Effective for Your Organization</h4>
             <p>Facebook has become one of the most important channels for reaching and engaging supporters online today. How do you know if you your Facebook efforts are working? In this webinar, you'll learn how to create content that will engage your community and support your mission.</p>
           </div>
-          <div class="webinar col col-lg-4">
+          <div class="webinar col col-sm-4">
             <h4>Webinar: 3 Steps to Make Facebook More Effective for Your Organization</h4>
             <p>Facebook has become one of the most important channels for reaching and engaging supporters online today. How do you know if you your Facebook efforts are working? In this webinar, you'll learn how to create content that will engage your community and support your mission.</p>
           </div>
-          <div class="webinar col col-lg-4">
+          <div class="webinar col col-sm-4">
             <h4>Webinar: 3 Steps to Make Facebook More Effective for Your Organization</h4>
             <p>Facebook has become one of the most important channels for reaching and engaging supporters online today. How do you know if you your Facebook efforts are working? In this webinar, you'll learn how to create content that will engage your community and support your mission.</p>
           </div>
@@ -141,7 +159,7 @@
 
     <div class="goals">
         <div class="row">
-            <div class="col col-lg-12">
+            <div class="col col-sm-12">
                 <p>Tell us one of your goals for this year, and we’ll show you how technology can help you succeed.</p>
                 <form action="/">
                     <select name="" id="">MY ROLE IS</select>
@@ -153,16 +171,16 @@
     </div>
 
     <div class="webinars">
-        <div class="row col col-lg-12">
+        <div class="row col col-sm-12">
             <h1 class="webinar-header">Case Study</h1>
         </div>
         <!-- Example row of columns -->
         <div class="row">
-          <div class="webinar col col-lg-4">
+          <div class="webinar col col-sm-6">
             <h4>Effective Modern Technology is Always a Work in Progress</h4>
             <p>In January 2013, the Communities of Impact kicked off with a retreat at Microsoft Headquarters in Redmond, WA. While there, we held a Failfaire-style conversation about times when our best-laid plans went awry. For one participant, this was a chance to reflect on how a massive project taught him that “there really is no such thing as an end result.</p>
           </div>
-          <div class="webinar col col-lg-4">
+          <div class="webinar col col-sm-6">
             <h4>Engagement-Oriented Organizing, Enabled by Data</h4>
             <p>Greenpeace's MobLab helps the organization transition into an era of people-powered campaigns. The right set of tools and an active social profile is helping Greenpeace to better support its community with campaigns that are community driven.</p>
           </div>
@@ -171,33 +189,75 @@
 
     <div class="share">
         <div class="row">
-            <div class="col col-lg-4">
-                <h4>Share this page on Social Networks <span class="glyphicon glyphicon-play"></span></h4>
+            <div class="col col-sm-12">
+                <h4 class="visible-xs">Share this page on Social Networks <span class="glyphicon glyphicon-play"></span></h4>
+                <div class="buttons hidden-xs">Share this page on:  <img src="images/bot-sm-sprite.png" alt=""></div>
             </div>
         </div>
     </div>
 
     <div class="footer">
-        <div class="row">
-            <div class="col col-lg-12">
-                <h4>Return to top of page</h4>
+      <div class="row hidden-xs">
+          <div class="col col-sm-12 logo">
+              <img src="images/nten-logo-footer.png" alt=""><span class="logo-text">Nonprofit Technology Network</span>
+          </div>
+      </div>
+      <div class="row visible-xs">
+          <div class="col col-sm-12">
+              <h4>Return to top of page</h4>
+          </div>
+      </div>
+      <div class="row hidden-xs">
+          <div class="col col-sm-12">
+              <ul class="footer-nav">
+                <li><a href="#">About NTEN</a></li>
+                <li><a href="#">Membership</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Learn</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Support NTEN</a></li>
+                <li><a href="#">Sitemap</a></li>
+              </ul>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col col-sm-12 visible-xs">
+              <h5>Nonprofit Technology Network</h5>
+              <address>1020 SW Taylor, #800 <br>
+              Portland, OR 97205 <br>
+              Phone: 415.397.9000    <br>       
+              Fax: 415.814.4056</address>
+          </div>
+          <div class="col col-sm-12 hidden-xs twitter">
+            <div class="twitter-header">Twitter Feed</div>
+            <div class="tweet-container">
+              <img class="tweet-image" src="images/tweet-image.png" alt=""><div class="tweet-text">I'm speaking at the <a href="">@NTENorg</a> Lab for Data-Informed Nonprofits on Wed. 2/19 in #PDX. Hit me up for a discount code. <a href="">http://bit.ly/PDXdatalab</a> </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col col-lg-12">
-                <h5>Nonprofit Technology Network</h5>
-                <address>1020 SW Taylor, #800 <br>
-                Portland, OR 97205 <br>
-                Phone: 415.397.9000    <br>       
-                Fax: 415.814.4056</address>
+            <div class="tweet-container">
+              <img class="tweet-image" src="images/tweet-image.png" alt=""><div class="tweet-text">I'm speaking at the <a href="">@NTENorg</a> Lab for Data-Informed Nonprofits on Wed. 2/19 in #PDX. Hit me up for a discount code. <a href="">http://bit.ly/PDXdatalab</a> </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col col-lg-12">
-                <p>NTEN is a 501(c)3 tax exempt organization.</p>
-                <p><a href="#privacy">Privacy Policy</a></p>
+            <div class="tweet-container">
+              <img class="tweet-image" src="images/tweet-image.png" alt=""><div class="tweet-text">I'm speaking at the <a href="">@NTENorg</a> Lab for Data-Informed Nonprofits on Wed. 2/19 in #PDX. Hit me up for a discount code. <a href="">http://bit.ly/PDXdatalab</a> </div>
             </div>
-        </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col col-sm-12 visible-xs">
+              <p>NTEN is a 501(c)3 tax exempt organization.</p>
+              <p><a href="#privacy">Privacy Policy</a></p>
+          </div>
+          <div class="col col-sm-12 hidden-xs">
+            <div class="policy col col-sm-5">
+              <div class="policy-header">Nonprofit Technology Network</div>
+              <p>1020 SW Taylor, #800 Portland, OR 97205<br>
+              Phone: 415.397.9000  Fax: 415.814.4056</p>
+            </div>
+            <div class="policy col col-sm-4 pull-right">
+              <p>NTEN is a 501(c)3 tax exempt organization. <br> 
+              <a href="#privacy">Privacy Policy</a></p>
+            </div>
+          </div>
+      </div>
     </div>
 </div> <!-- /container -->
 
@@ -223,6 +283,7 @@
 
         <!-- build:js scripts/main.js -->
         <script src="bower_components/jquery/jquery.js"></script>
+        <script src="bower_components/picturefill/picturefill.js"></script>
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
 
