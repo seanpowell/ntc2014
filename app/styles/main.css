@@ -121,6 +121,24 @@ footer bg: #323536;
         text-align: center;
     }
 
+    .webinar-date {
+        background: url(../images/ellipses.png) no-repeat;
+        width: 64px;
+        height: 64px;
+        text-align: center;
+        margin: 0 auto;
+        color: #fff;
+        line-height: 1.2em;
+        padding-top: 13px;
+        margin-bottom: 10px;
+    }
+
+    .day {
+        display: block;
+        font-size: 20px;
+        font-family: 'robotoblack';
+    }
+
     h1.webinar-header {
         font-size: 33px;
         font-family: 'VAG Rounded Std Thin';
@@ -167,7 +185,7 @@ footer bg: #323536;
         text-align: center;
     }
     .share h4 {
-        font-size: 20px;
+        font-size: 14px;
         color: #fff;
     }
 
@@ -202,7 +220,7 @@ footer bg: #323536;
 
 }
 
-/* Ipad */
+/* To ipad and beyond */
 
 @media screen and (min-width: 768px) {
     .main.container {
@@ -223,6 +241,11 @@ footer bg: #323536;
 
     .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
         margin-left: 15px;
+    }
+
+    .blog {
+        background: url(../images/blog_event_bg.png) no-repeat;
+        background-width: 100%;
     }
 
     .blog, .webinars, .goals {
@@ -323,6 +346,14 @@ footer bg: #323536;
         text-align: right;
         margin-right: 0;
         padding-right: 0;
+    }
+
+    .webinar {
+        margin-bottom: 2.5em;
+    }
+
+    .webinar-date {
+        float: left;
     }
 
     .share .buttons {
