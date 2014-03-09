@@ -66,34 +66,34 @@ module.exports = function (grunt) {
             }
         },
         
-        responsive_images: {
-            dev: {
-                options: {
-                    sizes: [
-                        {
-                            width: 320,
-                        },
-                        {
-                            width: 640
-                        },
-                        {
-                            width: 1024
-                        }
-                    ]
-                },
-                files: [{
-                    expand: true,
-                    cwd: '<%= yeoman.app %>/images',
-                    src: '{,*/}*.{png,jpg,jpeg}',
-                    dest: '<%= yeoman.dist %>/images'
-                }]
-            }
-        },
+        // responsive_images: {
+        //     dev: {
+        //         options: {
+        //             sizes: [
+        //                 {
+        //                     width: 320,
+        //                 },
+        //                 {
+        //                     width: 640
+        //                 },
+        //                 {
+        //                     width: 1024
+        //                 }
+        //             ]
+        //         },
+        //         files: [{
+        //             expand: true,
+        //             cwd: '<%= yeoman.app %>/images',
+        //             src: '{,*/}*.{png,jpg,jpeg}',
+        //             dest: '<%= yeoman.dist %>/images'
+        //         }]
+        //     }
+        // },
         connect: {
             options: {
                 port: 9000,
                 // change this to '0.0.0.0' to access the server from outside
-                hostname: 'localhost'
+                hostname: '0.0.0.0'
             },
             livereload: {
                 options: {
@@ -352,6 +352,7 @@ module.exports = function (grunt) {
                 files: {
                     '<%= yeoman.dist %>/styles/main.css': [
                         '.tmp/styles/{,*/}*.css',
+                        // '<%= yeoman.app %>/bower_components/bootstrap/dist/css/bootstrap.css',
                         '<%= yeoman.app %>/styles/{,*/}*.css'
                     ]
                 }
@@ -452,7 +453,7 @@ module.exports = function (grunt) {
         'useminPrepare',
         'concurrent:dist',
         'cssmin',
-        'responsive_images:dev',
+        // 'responsive_images:dev',
         'concat',
         'uglify',
         'copy',

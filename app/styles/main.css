@@ -11,6 +11,7 @@ share bg: #73afb5;
 footer bg: #323536;
 */
 
+
 /* Mobile Styles */
 
 @media screen and (min-width: 320px) {
@@ -169,8 +170,6 @@ footer bg: #323536;
     }
 
     .goals select {
-        margin-bottom: 25px;
-        border-radius: 0;
         width: 100%;
     }
 
@@ -216,6 +215,31 @@ footer bg: #323536;
 
     .footer a {
         color: #99c2de;
+    }
+
+    /* From https://coderwall.com/p/w7npmq */
+
+    .select-style {
+        border: 1px solid #ccc;
+        /*width: 120px;*/
+        margin-bottom: 1em;
+        border-radius: 3px;
+        overflow: hidden;
+        background: #fafafa url("data:image/png;base64,R0lGODlhDwAUAIABAAAAAP///yH5BAEAAAEALAAAAAAPABQAAAIXjI+py+0Po5wH2HsXzmw//lHiSJZmUAAAOw==") no-repeat 90% 50%;
+    }
+
+    .select-style select {
+        padding: 5px 8px;
+        /*width: 130%;*/
+        border: none;
+        box-shadow: none;
+        background: transparent;
+        background-image: none;
+        -webkit-appearance: none;
+    }
+
+    .select-style select:focus {
+        outline: none;
     }
 
 }
@@ -356,6 +380,24 @@ footer bg: #323536;
         float: left;
     }
 
+    .goals {
+      text-align: center;
+      padding-top: 25px;
+    }
+
+    .select-style {
+      width: 230px;
+      margin-right: 10px;
+      display: inline-block;
+    }
+
+    .goals button {
+      width: 230px;
+      vertical-align: top;
+      font-size: 16px;
+      padding: .3em;
+    }
+
     .share .buttons {
         font-family: 'robotomedium';
         font-size: 18px;
@@ -439,6 +481,16 @@ footer bg: #323536;
     .post.one {
         margin-right: 35px;
     }
+
+    .select-style {
+      width: 190px;
+      margin-right: 10px;
+      display: inline-block;
+    }
+
+    .goals button {
+      width: 190px;
+    }
 }
 
 @media screen and (min-width: 1090px) {
@@ -449,7 +501,7 @@ footer bg: #323536;
 
 }
 
-body > .container, .navbar > .container {
+body > .container, .navbar > .container, .ntc-message {
     max-width: 1100px;
  }  
 
@@ -466,3 +518,8 @@ body > .container {
 .img-responsive {
     width: 100%;
 }
+
+.ntc-message {
+    margin: 1em auto 1em; 
+}
+
